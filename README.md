@@ -1,5 +1,6 @@
 # Language-Driven Ontological Architecture (LDOA)
-
+> **The architecture is active and evolving.**
+ 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 Language-Driven Ontological Architecture is an architectural pattern for designing software around operational reality, responsibility, language, authority, and continuity.
