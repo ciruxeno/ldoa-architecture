@@ -1,313 +1,1253 @@
-# Language-Driven Ontological Architecture (LDOA) — Manifest v1
+# Language-Driven Ontological Architecture (LDOA) — Manifest v4
 
 ## Epistemological Disclaimer
 
-This architecture is rooted in the epistemology of the human being and the Ontology of Language, pioneered by Fernando Flores and Rafael Echeverría. Reading the foundational texts is not required to implement this architecture, but the core premise matters: language does not merely describe reality; it generates it.
+Language-Driven Ontological Architecture uses terms such as **Being**, **Situation**, **Judgment**, **Affirmation**, **Declaration**, **Breakdown**, **Listening**, **Speaking**, **Promise**, **Authority**, and **Operational Reality** as architectural translations of ontological distinctions.
 
-In LDOA, “reality” refers to operational reality: the set of conditions, states, commitments, transitions, and valid acts that are recognized, declared, transformed, or made addressable within the system.
+These terms should be read operationally.
 
-LDOA translates human cognitive coordination, speech acts, authority, promises, cognition, and the management of operational friction into a software architecture.
+They are not used as psychological categories, metaphysical claims, or spiritual abstractions. They describe how a software architecture may coordinate action, responsibility, language, authority, and continuity across domains.
 
-Terms such as Being, Situation, Judgment, Affirmation, Declaration, Breakdown, Listening, Speaking, and Reflecting are used as architectural translations of ontological distinctions. They should be read operationally, not psychologically or metaphysically.
+In LDOA, **reality** refers to **operational reality**: the set of conditions, states, commitments, transitions, and valid acts that are recognized, declared, transformed, or made addressable within the system.
+
+---
 
 ## 0. Naming Convention
 
-* **Architecture name:** Language-Driven Ontological Architecture
-* **Acronym:** LDOA
-* **Central ontological unit:** Being
+The name of this architectural pattern is:
 
-A Being is an ontological-operational existence within the system. It is defined declaratively and operates with bounded autonomy. It should not be reduced to an entity, a microservice, an actor, or a role.
+```text
+Language-Driven Ontological Architecture
+```
 
-An entity can be identified. An actor can act. A role can describe responsibility. A Being exists operationally. It carries identity, promises, behavior, native faculties, cognition, learned capabilities, judgments, authority, and the ability to produce acts into a shared operational language.
+Its acronym is:
 
-A Being has a root identity. That identity is stable during the life of the Being. Descriptions, memory, capabilities, promises, and behavior may evolve under governance, but changing the root identity means creating another Being.
+```text
+LDOA
+```
+
+LDOA is an architectural pattern.
+
+It is not a framework, a product, a library, a workflow engine, or a specific implementation.
+
+A framework or runtime may implement LDOA, but it should not be confused with the architecture itself.
+
+---
 
 ## 1. The Core Premise and Ontological Shift
 
-The base assumption of this architecture is that systems do not merely store, synchronize, or process data. In classical IT, ontology is commonly used to describe an external reality. LDOA shifts that base.
+Most software systems are designed around data, records, schemas, workflows, services, APIs, events, and infrastructure.
+
+LDOA starts from a different premise:
+
+```text
+Operational reality comes first.
+```
+
+A system does not create operational reality merely because it stores data.
+
+A database does not decide what occurred.
+
+A message bus does not decide what occurred.
+
+A component does not decide what occurred.
+
+Infrastructure records, transports, stores, executes, exposes, or fails to recognize aspects of operational reality.
+
+It does not command reality.
+
+LDOA exists to prevent software from confusing operational reality with its technical definitions, schemas, errors, or traces.
+
+A definition is not the act.
+
+A schema is not the reality.
+
+An error is not the truth.
+
+A trace is not the responsibility.
+
+When a system cannot represent, validate, store, transport, or process something that happened, the system should not deny that it happened.
+
+It should expose a new operational condition.
+
+That condition may be a missing distinction, an insufficient schema, a domain inconsistency, a technical failure, an unavailable capability, or a breakdown in continuity.
+
+In simple terms:
+
+```text
+Software should not punish operational reality because reality does not fit the system.
+```
+
+### 1.1 Primacy of Operational Reality
 
 Operational reality has primacy over infrastructure.
 
-A database does not decide what occurred. A message bus does not decide what occurred. A component does not decide what occurred. Infrastructure records, transports, stores, executes, exposes, or fails to recognize aspects of operational reality. It does not command reality.
+If an operator with authority declares that three kilograms of potatoes were sold, that declaration constitutes operational reality in the sales domain.
 
-A Situation is not merely a technical event, message, request, or wrapper.
+The fact that the product is not recognized by the inventory system does not erase the sale.
 
-A Situation is operational reality expressed in language and context.
+The fact that accounting cannot process it does not erase the sale.
 
-A declared Situation changes operational reality when authority exists.
+The fact that registration fails does not erase the sale.
 
-An affirmed Situation observes, reports, or confirms operational reality without transforming it.
+Those failures reveal new operational conditions.
 
-This distinction matters. A system may fail to record, transport, process, or recognize a Situation, but that failure does not automatically decide that the operational reality did not occur. It reveals another Situation: a missing record, a failed transport, an unavailable capability, an inconsistency, an insufficiency, or a Breakdown.
+Each of those conditions may become a new Situation to be attended, judged, delegated, repaired, affirmed, or declared as a Breakdown.
 
-This is the ontological shift: LDOA does not begin with infrastructure. It begins with operational reality in language.
+LDOA separates:
 
-### Primacy of Operational Reality
+```text
+the operational act
+```
 
-If a sale has occurred, the sale has occurred.
+from:
 
-If an operator with authority declares that three kilograms of potatoes were sold, that declaration constitutes operational reality in the sales domain. The fact that the product is not recognized by the inventory system does not erase the sale, nor should it retroactively prevent it.
+```text
+the technical handling of the act
+```
 
-The missing product reveals another operational condition: an insufficiency, inconsistency, or Breakdown in inventory, catalog, stock, integration, registration, or fulfillment.
+The act and its technical processing are not the same.
 
-That new condition must itself become addressable as a Situation.
+### 1.2 Core Movement
 
-In LDOA, a system does not deny operational reality because one component cannot recognize it. The architecture preserves the reality of the act and exposes the friction that prevents continuity.
-
-A database may fail to record.
-A bus may fail to transport.
-A component may fail to recognize.
-A capability may be unavailable.
-A domain may lack the authority to transform what another domain has already validly declared.
-
-None of those failures, by themselves, decide that the operational reality did not occur.
-
-They produce new Situations that must be judged, handled, delegated, repaired, affirmed, or declared as Breakdowns.
-
-This does not mean that every attempted act is valid. A Being may require preconditions before producing a valid Declaration. But once a valid operational act has been produced within its authority and domain, a later inconsistency in another component or domain does not erase that reality. It introduces another Situation.
-
-### Core Movement
-
-LDOA is organized around a simple architectural movement:
+LDOA is organized around this movement:
 
 ```text
 Situation → Being(s) → Speech Act(s) → Operational Continuity
 ```
 
-A Situation is operational reality expressed in language and context.
+A **Situation** is operational reality expressed in language and context.
 
-A Being listens to a Situation according to its promises, domain, context, cognition, behavior, and authority.
+A **Being** listens to Situations according to its promises, domain, authority, context, cognition, behavior, and capabilities.
 
-The Being may judge the Situation, exercise native Faculties, use acquired Capabilities, and produce a Speech Act.
+A **Speech Act** is what a Being produces into the shared operational language of the system.
 
-That Speech Act may affirm, declare, or expose a Breakdown.
+A Speech Act may affirm reality, declare a new reality, or expose a Breakdown.
 
 A produced Speech Act may itself become a new Situation for other Beings.
 
-Operational continuity is therefore not a linear pipeline. It is a coordinated movement where Beings listen, judge, speak, and preserve or restore continuity across domains.
+**Operational Continuity** is the goal: to preserve, transform, restore, or make addressable the reality recognized by the system.
 
-The purpose of this movement is operational continuity: to preserve, transform, restore, or make addressable the reality recognized by the system.
+This is not a linear pipeline.
 
-That is the central movement of the architecture.
+It is a coordination model.
+
+### 1.3 Transport Independence
+
+LDOA operates above the transport layer.
+
+The Core Movement does not prescribe how Situations circulate or how Speech Acts are delivered.
+
+A Situation may arrive through a REST call, an event on a message bus, a webhook, a scheduled trigger, a queue, a file, or any other communication mechanism.
+
+A Speech Act may be delivered through the same range of channels.
+
+What LDOA prescribes is not the transport.
+
+It prescribes the operational grammar through which reality, responsibility, authority, judgment, and continuity preserve meaning across any transport mechanism.
+
+The transport mechanism may affect implementation concerns such as ordering, delivery guarantees, latency, retries, idempotency, availability, backpressure, and observability.
+
+But it does not define the pattern.
+
+LDOA does not live in the transport layer.
+
+It lives in the layer of operational reality, language, responsibility, and authority that any transport may carry.
+
+---
 
 ## 2. Architectural Composition
 
-LDOA is one architecture, but it is composed of several internal models. These models are not separate architectures; they describe different dimensions of the same architectural form:
+LDOA is composed of several internal models:
 
-* Behavior Model
-* Faculty, Capability, and Cognition Model
-* Judgment and Breakdown Model
-* Speech Act Model
-* Authority Model
-* Common Communication Channel Model
-* Unified Language Model
-* Multi-Domain Context Model
-* Metastructure Model
+```text
+Behavior Model
+Faculty, Act of Being, Capability, and Cognition Model
+Judgment and Breakdown Model
+Speech Act Model
+Authority Model
+Common Communication Channel Model
+Unified Language Model
+Multi-Domain Context Model
+Metastructure Model
+```
 
-The architecture only makes sense when these models operate together. Speech Acts without Authority lack transformative force. Authority without Context is ambiguous. Context without a Unified Language collapses into local interpretation. Behavior without Promises becomes generic execution. Communication without a shared channel cannot coordinate Beings. Capabilities without Cognition become static mechanisms detached from adaptation. LDOA is the composition of those distinctions.
+These models are not separate architectures.
 
-## 3. The Behavior Model
+They are dimensions of the same architectural pattern.
 
-The Behavior Model separates business definition from physical execution.
+Together, they describe how operational reality becomes addressable, how Beings attend it, how acts are produced, how authority gives force, how breakdowns become visible, and how continuity is preserved across domains.
 
-### The Unified Event Schema: Situations
+---
 
-In this architecture, an “Event” is not limited to an asynchronous message from infrastructure such as Kafka or RabbitMQ. A REST API call, a webhook, a scheduled trigger, or a database trigger may carry Situations into the operational ecosystem.
+## 3. Behavior Model
 
-The Unified Event Schema is the technical envelope through which a Situation may circulate. It is not the Situation itself.
+The Behavior Model defines how a Being fulfills its promises when a Situation appears.
 
-A Situation is operational reality expressed in language and context. The schema exposes that Situation’s context, identity, data, and authority-relevant dimensions. The schema does not make every Being capable of acting. It only makes the Situation structurally available within the shared operational language.
+A Being does not react to everything.
 
-Whether a Being can understand, judge, or act upon a Situation depends on its own declarative definition, promises, domain, authority, behavior, and cognition.
+A Being attends what it is able and responsible to attend according to its promises, domain, authority, cognition, behavior, and capabilities.
 
-### The Being
+Behavior defines:
 
-A Being is defined through a declarative Domain-Specific Language (DSL) governed by the business. The DSL declares the Being’s identity, promises, behavior, native faculties, cognition, learned capabilities, judgments, and authority. The DSL is not the Being itself; it is the declarative structure through which the Being becomes operational.
+```text
+which Situations the Being attends
+which promise is activated
+which faculties may be exercised
+which capabilities may be used
+which judgments may be emitted
+which acts may be produced
+which authority applies
+which continuity is expected
+```
 
-A Being does not simply execute logic. It carries promises. A promise defines what the Being is committed to fulfill. An operational Being is not meaningful without promises, because without promises there is no responsibility to observe, judge, fulfill, or produce an act.
+Behavior belongs to the Being.
 
-Behavior is the way the Being fulfills its promises when a Situation appears. Behavior belongs to the Being: it defines which Situations the Being attends, which promise is activated, which native faculties may be exercised, which learned capabilities may be used, which judgments may be emitted, and which acts may be produced.
+It is not owned by the Executor, the database, the message bus, or the transport mechanism.
 
-An Accountant within this architecture is not an entity called Accountant. It is not an actor playing accountant. **The Being is the Accountant.** It interprets accounting Situations, exercises its native faculties, uses learned accounting capabilities, emits accounting Judgments, and produces accounting acts that may become valid Declarations when authority exists.
+### 3.1 Unified Event Schema: Situations
 
-### The Executor
+LDOA may use a unified event schema to transport Situations across technical environments.
 
-The Executor provides the infrastructure. It supplies CPU, memory, network, storage, event transport, and access to technical resources. It acts as a business-agnostic interpreter of the Being’s DSL.
+However, the event is not the Situation itself.
 
-The Executor contains no business logic. It holds no authority. It does not own context, decide behavior, or produce meaning. It gives physical execution to the ontological decisions established by the Being.
+```text
+Situation = operational reality expressed in language and context
+Event = technical vehicle through which a Situation may circulate
+```
 
-## 4. Faculty, Capability, and Cognition Model
+A Situation may travel through an event, message, API call, queue, webhook, file, or other transport mechanism.
 
-In LDOA, a Faculty is not a generic technical capability. A Faculty is a native constitutive mode of operation shared by all Beings. Every Being is born with Faculties.
+The transport mechanism does not define the meaning of the Situation.
 
-A Capability is different. A Capability is an acquired, learned, granted, or declared operational ability that allows a Being to fulfill a specific promise within a domain.
+The Unified Language Model preserves meaning.
 
-Faculties define *how* a Being can operate. Capabilities define *what* a Being has learned, acquired, or been granted to do.
+Authority determines transformative force.
 
-Cognition is the internal domain where the Being preserves memory, distinctions, learned capabilities, judgment criteria, promise history, and observed fulfillment. Learning belongs to Cognition. It is not part of the native Faculty set. Learning is an adaptive cognitive capability that allows some Beings to acquire, refine, or update Capabilities under governance.
+The channel provides communicational space.
 
-In conventional software architecture, a capability may refer to an API, a function, a permission, a feature, a module, or an organizational ability. In LDOA, that word is constrained. Capabilities are not native modes of operation. They are acquired operational abilities available to a Being for fulfilling promises.
+### 3.2 The Being
 
-A Being can observe. A Being can listen. A Being can speak. A Being can judge. A Being can reflect. **Those are native Faculties.**
+A **Being** is an ontological-operational existence within the system.
 
-An Accountant may acquire Reconciliation. A Support Being may acquire Incident Classification. An Operator may acquire the ability to initiate a specific operational flow. A Being may acquire the ability to read a ledger, call an API, parse a format, persist data, publish an event, or query a source. **Those are Capabilities.**
+It is defined declaratively and operates with bounded autonomy.
 
-A Being does not outsource its responsibility when it uses a Capability. It may use infrastructure, connectors, resources, APIs, databases, queues, or external systems through acquired capabilities, but the meaning and responsibility of the action remain owned by the Being. If the Being is an Accountant and it has acquired the Capability of Reconciliation, the Executor may provide the database connection, but ontologically, the Accountant reconciles.
+It should not be reduced to an entity, a microservice, an actor, a class, or a role.
 
-### Native Faculties
+```text
+An entity can be identified.
+An actor can act.
+A role can describe responsibility.
+A Being exists operationally.
+```
 
-A Being is born with a minimal set of native Faculties. These are constitutive modes of operation:
+A Being carries:
 
-* **Observing / Distinguishing:** Allows a Being to distinguish operational reality, including its own state, promise fulfillment, degradation signals, and relevant conditions. Observing is not passive perception; to observe is to distinguish reality through the language and cognition available to the Being.
-* **Listening:** Allows a Being to attend incoming Situations. A Being does not listen to everything; it listens to what it needs to listen to in order to fulfill its promises, according to its context, behavior, and cognition.
-* **Speaking / Producing:** Allows a Being to produce acts into the shared operational language of the system. Producing is the operational form of Speaking.
-* **Judging:** Allows a Being to evaluate a Situation before acting.
-* **Reflecting:** Allows a Being to observe itself over time: its pending promises, emitted Judgments, fulfillment level, memory, learned capabilities, and possible Breakdowns.
+```text
+cognition as structural anchor
+mutable identity
+promises
+behavior
+native faculties
+learned or acquired capabilities
+judgment criteria
+authority
+memory and traceability references
+domain context
+ability to produce acts into shared operational language
+```
 
-### Cognition and Learning
+A Being is the unit that listens, distinguishes, judges, reflects, uses capabilities, and produces acts.
 
-Cognition may evolve during the life of a Being. The root identity does not change. The Being may refine its memory, distinctions, learned capabilities, judgment criteria, and ways of fulfilling promises, but it remains the same Being only while its root identity remains stable.
+### 3.3 Identity
 
-Learning is a cognitive capability. It allows a Being to acquire, refine, or adjust Capabilities under governance. Learning does not mean arbitrary mutation. A Being learns within the boundaries of its promises, authority, Unified Language, and declarative definition. When a Being accepts or is granted a new promise, it may need to acquire new Capabilities, refine its Observing, adjust its Judging, or extend its behavior. The promise is not merely learned as a function; it becomes part of the Being’s responsibility under authority.
+The Identity defines the current operational persona of the Being.
+
+It comprises the set of mutable attributes, such as name, current roles, operational status, active capabilities, and active projections that the Being presents to other Beings within the system.
+
+The Identity is mutable.
+
+A Being may evolve its capabilities, change its operational role, assume a new name, or adjust its current persona to better serve its promises.
+
+This mutation of Identity does not imply the Being has ceased to exist.
+
+It signifies that the Being is adapting its operational expression while maintaining its structural foundation.
+
+The structural foundation of the Being is not its Identity.
+
+The structural foundation of the Being is its Cognition.
+
+### 3.4 Promise
+
+A promise defines what the Being is committed to fulfill.
+
+An operational Being is not meaningful without promises, because without promises there is no responsibility to observe, judge, fulfill, or produce an act.
+
+A promise is not simply a function.
+
+A promise is a declared responsibility.
+
+If a Being receives a new promise, that promise must be accepted, declared, granted, or configured under authority.
+
+A Being may need new capabilities, new judgment criteria, new context, or new governance in order to fulfill a new promise.
+
+### 3.5 The Executor
+
+The Executor provides the infrastructure.
+
+It supplies CPU, memory, network, storage, event transport, persistence, and access to technical resources.
+
+It acts as a business-agnostic interpreter of the Being’s declarative definition.
+
+The Executor contains no business logic.
+
+It holds no authority.
+
+It does not own context.
+
+It does not decide behavior.
+
+It does not produce meaning.
+
+It gives physical execution to the ontological decisions established by the Being.
+
+In LDOA:
+
+```text
+The Being owns operational responsibility.
+The Executor provides physical execution.
+```
+
+---
+
+## 4. Faculty, Act of Being, Capability, and Cognition Model
+
+LDOA separates **Faculty**, **Act of Being**, **Capability**, and **Cognition**.
+
+This separation is important.
+
+A system may execute code without distinguishing responsibility.
+
+A Being, however, operates through faculties, performs acts, uses capabilities, and preserves structural continuity through Cognition.
+
+### 4.1 Faculty
+
+A **Faculty** is a native constitutive mode of operation shared by all Beings.
+
+Every Being is born with Faculties.
+
+Native Faculties in LDOA are:
+
+```text
+Observing / Distinguishing
+Listening
+Speaking / Producing
+Judging
+Reflecting
+```
+
+Faculties define how a Being can operate.
+
+They are not business-specific skills.
+
+They are constitutive modes of operation.
+
+### 4.2 Observing / Distinguishing
+
+Observing / Distinguishing allows a Being to distinguish operational reality, including its own state, promise fulfillment, degradation signals, and relevant conditions.
+
+Observing is not passive perception.
+
+To observe is to distinguish reality through the language and cognition available to the Being.
+
+A Being can only act on what it can distinguish.
+
+### 4.3 Listening
+
+Listening allows a Being to attend incoming Situations.
+
+A Being does not listen to everything.
+
+It listens to what it needs to listen to in order to fulfill its promises, according to its context, behavior, cognition, and authority.
+
+Listening is not merely consuming a message.
+
+A component may consume a message without truly attending a Situation.
+
+Listening requires distinction, relevance, and responsibility.
+
+### 4.4 Speaking / Producing
+
+Speaking / Producing allows a Being to produce acts into the shared operational language of the system.
+
+Producing is the operational form of Speaking.
+
+A Being has the Faculty of Speaking / Producing.
+
+It does not have native Faculties called Declaring or Affirming.
+
+Declaration and Affirmation are types of Speech Acts, not native Faculties.
+
+### 4.5 Judging
+
+Judging allows a Being to evaluate a Situation before acting.
+
+A Judgment is not a simple validation.
+
+It is an operational stance toward a Situation.
+
+Through Judgment, a Being may determine whether it has enough context, capability, authority, or responsibility to continue.
+
+### 4.6 Reflecting
+
+Reflecting allows a Being to observe itself over time.
+
+A Being may reflect on:
+
+```text
+pending promises
+emitted judgments
+fulfillment level
+memory and traceability references
+learned capabilities
+repeated breakdowns
+impeccability
+possible insufficiencies
+identity mutations
+```
+
+Reflection allows the Being to observe its own operation, not only external Situations.
+
+### 4.7 Act of Being
+
+An **Act of Being** is the concrete operation a Being performs by exercising one of its Faculties.
+
+Faculties define the constitutive possibility.
+
+Acts of Being are the actual exercise of those faculties.
+
+```text
+Faculty → possibility of operation
+Act of Being → concrete exercise of operation
+Speech Act → communicable act produced into shared language
+```
+
+Examples of Acts of Being include:
+
+```text
+listening
+attending
+observing
+distinguishing
+judging
+reflecting
+producing
+speaking
+```
+
+Not every Act of Being is a Speech Act.
+
+A Being may listen, observe, distinguish, judge, or reflect without yet producing a Speech Act.
+
+A Speech Act appears when the Being, through Speaking / Producing, emits something into the shared operational language of the system.
+
+The relation is:
+
+```text
+Situation or Speech Act
+        ↓
+Being
+        ↓
+Act of Being
+        ↓
+Speech Act
+        ↓
+New Situation for another Being
+```
+
+In simple terms:
+
+```text
+A Being performs Acts of Being.
+Through Speaking / Producing, an Act of Being may emit a Speech Act.
+A Speech Act may become a Situation for another Being.
+```
+
+This distinction prevents LDOA from reducing Beings to message emitters.
+
+The Being does not merely send output.
+
+The Being operates, judges, and then may speak.
+
+### 4.8 Capability
+
+A **Capability** is an acquired, learned, granted, or declared operational ability that allows a Being to fulfill a specific promise within a domain.
+
+Capabilities define what a Being has learned, acquired, or been granted to do.
+
+Examples of capabilities include:
+
+```text
+reconciliation
+incident classification
+reading a ledger
+calling an API
+parsing a format
+persisting data
+publishing an event
+querying a source
+initiating a specific operational flow
+```
+
+Faculties and Capabilities are different:
+
+```text
+Faculties define how a Being can operate.
+Capabilities define what a Being has learned, acquired, or been granted to do.
+```
+
+A Being does not outsource its responsibility when it uses a Capability.
+
+It may use infrastructure, connectors, APIs, databases, queues, or external systems through acquired capabilities, but the meaning and responsibility of the action remain owned by the Being.
+
+If the Being is an Accountant and it has acquired the Capability of Reconciliation, the Executor may provide the database connection, but ontologically, the Accountant reconciles.
+
+### 4.9 Cognition
+
+Cognition is the internal, immutable structural anchor of the Being.
+
+It defines the Being's existence across time and provides the foundation for governance and traceability.
+
+While a Being may change its Identity — its attributes, current roles, operational status, active capabilities, or expressive projections — its Cognition remains constant.
+
+If the Cognition changes, the structural foundation is lost, and the Being ceases to exist as the same Being.
+
+A new structural discontinuity occurs.
+
+Cognition governs the Being's core operational integrity and provides the stable foundation upon which all Identity changes are recorded, audited, and validated.
+
+When a system audits a Being, it traces its Cognition to know exactly "who" it is structurally, regardless of how its Identity has evolved over time.
+
+### 4.10 Learning
+
+Learning is a governed adaptive process.
+
+It allows a Being to acquire, refine, or adjust capabilities under governance.
+
+Learning does not mutate Cognition.
+
+Learning changes the Being's operational expression: its Identity, active capabilities, current roles, behavioral configuration, or ways of fulfilling promises.
+
+Those changes are recorded, audited, and validated against the Being's Cognition.
+
+A Being may learn without ceasing to be the same Being because its Cognition remains constant.
+
+If learning requires changing the Cognition itself, then the Being has crossed a structural boundary.
+
+At that point, the original Being ceases to exist as the same Being, and a new Being must be created.
+
+Learning does not mean arbitrary mutation.
+
+A Being learns within the boundaries of its promises, authority, Unified Language, declarative definition, and Cognition.
+
+### 4.11 Concrete Example: Cognition vs. Identity
+
+To clarify the distinction between Cognition and Identity, consider a **Sales Being** in a retail domain.
+
+A Being is instantiated with a specific Cognition: its unique structural anchor.
+
+For example:
+
+```text
+SALES-XYZ-99
+```
+
+Its initial Identity is:
+
+```text
+Junior Seller
+```
+
+This Identity includes the promise to process basic sales.
+
+Over time, the Being learns and acquires the capability to perform complex reconciliations.
+
+It is promoted to:
+
+```text
+Senior Seller
+```
+
+Its Identity has mutated.
+
+Its attributes, capabilities, and role are different.
+
+However, its Cognition remains:
+
+```text
+SALES-XYZ-99
+```
+
+The system and the domain auditors recognize it as the exact same Being because the structural anchor is unchanged.
+
+If the Being is entirely replaced by a new instance with a new structural definition, the old Cognition ceases to exist.
+
+Even if the new Being assumes the exact same Identity — for example, **Senior Seller** — the system treats it as a distinct operational entity because the Cognition has changed.
+
+---
 
 ## 5. Common Communication Channel Model
 
-A Being does not coordinate in isolation. Communication requires a shared medium.
+The Common Communication Channel is an architectural abstraction, not a technology.
 
-The Common Communication Channel is the shared operational medium through which produced acts circulate and become available for other Beings to listen to. In a concrete implementation, this channel may be Kafka, an API, a queue, a webhook, or another shared communication mechanism.
+LDOA does not prescribe Kafka, REST, a message queue, a webhook, or any specific integration mechanism.
 
-The channel allows Beings to speak and listen. It does not, by itself, create meaning, authority, or validity. A Being may produce an act into the channel. Another Being may listen to that act if its promises, behavior, context, and cognition make that act relevant.
+It prescribes that Beings coordinate through a shared operational medium.
 
-The channel transports communication. The Unified Language preserves meaning. Authority determines transformative force.
+That medium may be implemented through any transport mechanism that allows produced acts to circulate and become available for other Beings to attend.
 
-A channel may carry Situations produced through Affirmations, Declarations, Breakdowns, or other valid Speech Acts. What matters architecturally is not the transport mechanism, but the fact that Beings coordinate through a common communicational space.
+The choice of transport is an implementation decision.
+
+The existence of a shared channel is an architectural requirement.
+
+What matters is not only how acts travel, but that Beings operate within a common communicational space governed by the Unified Language Model.
+
+This shared communicational space may be implemented through:
+
+```text
+Kafka
+RabbitMQ
+REST
+gRPC
+webhooks
+queues
+streams
+files
+shared memory
+scheduled triggers
+or another transport mechanism
+```
+
+The channel allows Beings to speak and listen.
+
+The channel does not create meaning.
+
+The channel does not grant authority.
+
+The channel does not decide validity.
+
+```text
+The channel transports communication.
+The Unified Language preserves meaning.
+Authority determines transformative force.
+```
+
+A channel may carry Situations produced through Affirmations, Declarations, Breakdowns, or other valid Speech Acts.
+
+The important architectural point is not the transport mechanism.
+
+The important point is that Beings share a common communicational space where operational reality can circulate in language and context.
+
+Transport choices still matter at the implementation level.
+
+Different mechanisms provide different guarantees around ordering, delivery, consistency, latency, retry, idempotency, backpressure, observability, and failure recovery.
+
+Those concerns must be designed carefully.
+
+But they do not define LDOA.
+
+They define how a concrete implementation carries the operational language of LDOA.
+
+---
 
 ## 6. Judgments and Breakdowns
 
-LDOA reframes technical validations and exceptions as part of a broader operational judgment model. Before producing an act, a Being evaluates the Situation and emits a Judgment:
+A Judgment is the operational stance a Being takes toward a Situation before acting.
 
-* **Judgment of Ignorance:** “The DSL lacks the configuration or cognition required to interpret this situation.”
-* **Judgment of Insufficiency:** “The Situation is recognized, but its structure lacks the required data, context, authority, or capability to act.”
-* **Judgment of Satisfaction:** “Conditions are met to proceed with the promise.”
+It is not merely a boolean validation.
 
-### The Breakdown
+It is not simply success or failure.
 
-When operational transparency is lost—because of missing context, degraded promises, insufficient data, technical friction, systemic uncertainty, or a missing Capability—the Being produces a Breakdown.
+It expresses how the Being understands its ability, authority, context, and responsibility in relation to the Situation.
 
-A Breakdown is not a fatal exception. It is a valid Speech Act that enters the ecosystem as a new Situation. It makes the friction addressable. A Breakdown can be handled by the same Being during a later Reflection, routed to a specialized Support Being, processed by AI, escalated to an operator, or passed into another operational layer.
+### 6.1 Core Judgments
 
-### Resilience and Ontological Continuity
+LDOA defines several fundamental Judgment types.
+
+#### Judgment of Satisfaction
+
+```text
+The Situation is recognized, and conditions are met to proceed with the promise.
+```
+
+#### Judgment of Ignorance
+
+```text
+The Being lacks the configuration, cognition, distinction, or capability required to interpret this Situation.
+```
+
+#### Judgment of Insufficiency
+
+```text
+The Situation is recognized, but its structure lacks the required data, context, authority, or capability to act.
+```
+
+These Judgments do not merely control flow.
+
+They preserve meaning.
+
+They allow a Being to say why it can act, why it cannot act, or what is missing for continuity.
+
+### 6.2 Breakdown
+
+A Breakdown is not a fatal exception.
+
+A Breakdown is a valid Speech Act that exposes operational friction as a new Situation.
+
+A Breakdown makes interruption addressable.
+
+Breakdowns may arise from:
+
+```text
+missing context
+insufficient data
+unrecognized product
+unavailable capability
+technical failure
+degraded promise
+domain inconsistency
+lack of authority
+systemic uncertainty
+```
 
 In many conventional architectures, a technical failure is treated primarily as an exception, timeout, retry, or infrastructure incident.
 
-LDOA separates physical execution from ontological responsibility. The Executor acts as the physical body; the Being holds operational identity, promises, behavior, cognition, and authority.
+In LDOA, a failure may also become a Situation.
 
-A network timeout, a dead connection, or an unavailable dependency is not an ontological fatal error. It is a physical obstacle that breaks the transparency of normal operation.
+For example:
 
-When such a failure becomes observable, the Executor may translate it into a new Situation presented to the Being, such as: “The acquired capability is temporarily unavailable.”
+```text
+The acquired capability is temporarily unavailable.
+```
 
-The Being evaluates that Situation. If the obstacle affects its promise fulfillment, the Being may produce a Breakdown.
+If that condition affects promise fulfillment, the Being may produce a Breakdown.
 
-The Breakdown enters the Common Communication Channel as a new Situation. A separate Affirmation may report the physical condition, but the Breakdown is the act that makes the friction operationally addressable.
+That Breakdown enters the shared language of the system and may be attended by another Being, a support domain, an operator, or a specialized recovery process.
 
-Just as a human accountant does not cease to exist when their calculator loses power, a Being does not lose its identity when infrastructure fails. The Being preserves its promises and continuity while the friction is routed, delegated, or handled by another Being, operator, or operational layer.
+A Breakdown does not erase the operational reality that gave rise to it.
 
-### Impeccability
+It creates a new operational condition that can be handled.
 
-A Being tracks its own Judgments. By observing its ratio of Satisfaction, Ignorance, and Insufficiency, the Being observes its own Impeccability: its level of fulfillment against its promises.
+### 6.3 Impeccability
 
-Impeccability is not moral purity. Operationally, it is promise fulfillment observed over time. If fulfillment degrades, Reflection may lead the Being to produce a higher-level Breakdown. This allows the system to surface degradation before it becomes invisible operational debt. Trust emerges from observed Impeccability over time.
+A Being tracks its own Judgments over time.
+
+By observing its ratio of Satisfaction, Ignorance, and Insufficiency, the Being observes its own Impeccability: its level of fulfillment against its promises.
+
+Impeccability is not moral purity.
+
+Operationally, it is promise fulfillment observed over time.
+
+Trust emerges from observed Impeccability over time.
+
+---
 
 ## 7. Speech Act and Authority Models
 
-System outputs are treated as acts of language. A Being has the Faculty of Speaking / Producing. It does not have a native Faculty called Declaring or Affirming. Affirmation and Declaration belong to the Speech Act Model. They describe what a produced act becomes within the shared operational language of the system.
+Outputs in LDOA are treated as acts of language.
 
-* **Affirmation:** Observes, reports, or confirms operational reality. It does not transform operational reality and requires no transformative authority.
-* **Declaration:** Transforms or constitutes operational reality. It creates a new condition and advances system continuity.
+A Being does not merely produce data.
 
-A Declaration requires Authority to be valid. Authority is not the same as RBAC; it is not simply a permission attached to a user or process. Authority is the ontological condition that gives a produced act transformative force.
+A Being produces acts into the shared operational language of the system.
 
-Implicit authority exists when the following are aligned:
+These acts may observe reality, transform reality, or expose interruption.
+
+### 7.1 Speech Act
+
+A **Speech Act** is an act produced into the shared operational language.
+
+The main Speech Acts in LDOA are:
+
+```text
+Affirmation
+Declaration
+Breakdown
+```
+
+Other forms may exist depending on the implementation, but these are the core architectural acts.
+
+### 7.2 Affirmation
+
+An Affirmation observes, reports, or confirms operational reality.
+
+It does not transform operational reality by itself.
+
+It requires no transformative authority.
+
+Examples:
+
+```text
+Inventory reports that stock is insufficient.
+Accounting reports that reconciliation is pending.
+Registration reports that the trace was persisted.
+A monitoring Being reports that a capability is degraded.
+```
+
+### 7.3 Declaration
+
+A Declaration constitutes or transforms operational reality when authority exists.
+
+It creates a new operational condition and advances system continuity.
+
+Examples:
+
+```text
+A sale is declared.
+A payment is accepted.
+A shipment is dispatched.
+A correction is approved.
+A breakdown is formally declared.
+```
+
+A Declaration requires Authority.
+
+Without Authority, an attempted Declaration does not have transformative force.
+
+It may be treated as an Affirmation, rejected as invalid, or transformed into a Breakdown depending on the Being definition and the domain rules.
+
+### 7.4 Breakdown as Speech Act
+
+A Breakdown is also a Speech Act.
+
+It communicates that operational continuity has been interrupted, degraded, or made insufficient.
+
+A Breakdown does not merely report error.
+
+It creates a new Situation that can be attended.
+
+```text
+Failure becomes addressable through language.
+```
+
+### 7.5 Authority
+
+Authority is the ontological condition that gives a produced act transformative force within a domain.
+
+Authority is not the same as authentication.
+
+Authority is not merely RBAC.
+
+Authority is not only permission.
+
+Authority determines whether a produced act can constitute or transform operational reality.
+
+A simple rule may apply:
 
 ```text
 Residence Domain == Operation Domain == Situation Domain
 ```
 
-Authority may also be explicitly granted through the Being’s DSL. Without authority, an attempted Declaration has no transformative effect on operational reality. Depending on the Being’s definition, it may be treated as an Affirmation, rejected as invalid, or produced as a Breakdown.
+When this holds, authority may be implicit.
 
-A judge issuing a ruling in a courtroom performs a Declaration. The same individual saying the same words in a public square performs, at most, an Affirmation. The words may be identical. The authority is not. The reality produced is different.
+Authority may also be explicitly granted through the Being’s declarative definition.
 
-An operator declaring a sale within the sales domain may produce a valid operational reality for Sales. Inventory, Accounting, Registration, or Fulfillment may each listen to that Situation according to their own promises and authority. If one of those domains fails, the sale does not disappear. The failure becomes another Situation.
+A judge issuing a ruling in a courtroom performs a Declaration.
 
-## 8. Shared Meaning: Language and Context
+The same individual saying the same words in a public square performs, at most, an Affirmation.
 
-Integration relies on shared meaning, not only on data exchange. The Unified Language Model establishes that Situations, Judgments, Breakdowns, Speech Acts, Authority, Promises, Faculties, Capabilities, Cognition, and Beings share the same semantic distinctions across the system. Without that language, messages may still move, endpoints may still respond, and workflows may still execute, but operational coherence collapses.
+The words may be identical.
 
-Context does not live in one central place:
+The authority is not.
 
-* The **Situation Context** arrives with the Situation.
-* The **Residence Context** defines where the Being lives and where its baseline legitimacy comes from.
-* The **Operation Context** identifies where the behavior is being exercised.
+The reality produced is different.
 
-A Being may live in one domain, operate in another, and attend Situations from multiple domains. Operating in a domain does not automatically grant authority to declare within it. Authority must be implicit through alignment or explicit through declaration in the DSL.
+### 7.6 Authority and Technical Validation
+
+A validation rule may reject data.
+
+That does not necessarily mean it has authority to deny that an operational act occurred.
+
+A database constraint may fail.
+
+That does not mean the operational reality is false.
+
+A schema may not accept a Situation.
+
+That does not mean the Situation did not exist.
+
+LDOA separates technical validation from operational authority.
+
+This distinction is essential.
+
+Without it, systems may punish reality because reality does not fit their current representation.
+
+---
+
+## 8. Shared Meaning: Language, Context, and the Unified Language Model
+
+LDOA is not based only on data exchange.
+
+It is based on shared operational meaning.
+
+A system may move messages without preserving meaning.
+
+An event may be consumed without being properly attended.
+
+A validation may reject data without having authority to deny that an operational act occurred.
+
+A technical error may interrupt processing without erasing the reality that gave rise to it.
+
+The Unified Language Model exists to prevent that collapse of meaning.
+
+### 8.1 Unified Language Model
+
+The **Unified Language Model** defines the shared operational language through which Beings coordinate.
+
+It is not merely a vocabulary of events.
+
+It is not only a technical schema for message exchange.
+
+It is the grammatical structure that allows operational reality to be expressed, attended, judged, declared, affirmed, broken down, and continued across domains.
+
+Its core components are:
+
+```text
+Situation + Speech Act
+```
+
+A **Situation** defines the operational reality being made addressable.
+
+A **Speech Act** defines how a Being communicates about that reality.
+
+The main Speech Acts in LDOA are:
+
+```text
+Affirmation
+Declaration
+Breakdown
+```
+
+An **Affirmation** observes, reports, or confirms operational reality.
+
+A **Declaration** constitutes or transforms operational reality when authority exists.
+
+A **Breakdown** exposes operational friction, insufficiency, or interruption as a new Situation.
+
+In this sense, a Breakdown is not merely an error.
+
+It is a Speech Act that allows the system to preserve continuity by transforming friction into something addressable.
+
+The basic movement of the Unified Language Model is:
+
+```text
+Situation → Speech Act → New Situation
+```
+
+A Speech Act produced by one Being may become a new Situation for another Being.
+
+This is how operational reality propagates through the architecture.
+
+### 8.2 Situation and Event
+
+A Situation may travel through a technical event, message, API call, queue, or other transport mechanism.
+
+But the Situation is not reducible to the transport.
+
+```text
+Situation = operational reality expressed in language and context
+Event = technical vehicle through which a Situation may circulate
+```
+
+This distinction matters.
+
+If the event fails to publish, the operational reality does not disappear.
+
+If the message is malformed, the operational reality does not disappear.
+
+If the schema is insufficient, the operational reality does not disappear.
+
+Those failures may become new Situations or Breakdowns.
+
+### 8.3 Shared Distinctions
+
+The Unified Language Model requires shared distinctions such as:
+
+```text
+Situation
+Speech Act
+Affirmation
+Declaration
+Breakdown
+Judgment
+Authority
+Domain
+Promise
+Context
+Being
+Capability
+Operational Continuity
+```
+
+Without these distinctions, systems may move data, but they do not necessarily preserve meaning.
+
+The Unified Language Model ensures that Beings do not merely exchange data.
+
+They coordinate through a shared operational grammar.
+
+In simple terms:
+
+```text
+Situation defines what is being attended.
+Speech Act defines how something is communicated about it.
+Judgment defines the stance taken by the Being.
+Authority defines whether the act has transformative force.
+Breakdown defines how interruption becomes addressable.
+Domain defines where responsibility lives.
+Promise defines what must be fulfilled.
+Context defines how the Situation should be understood.
+```
+
+The Unified Language Model is therefore the common language of operational continuity.
+
+### 8.4 Context
+
+Context defines how a Situation should be understood.
+
+LDOA distinguishes several kinds of context.
+
+#### Situation Context
+
+Situation Context arrives with the Situation.
+
+It describes the operational reality being expressed.
+
+It may include:
+
+```text
+time
+domain
+actor
+source
+circumstances
+declared facts
+observed conditions
+relevant distinctions
+```
+
+#### Residence Context
+
+Residence Context defines where a Being lives.
+
+It establishes its baseline legitimacy, identity, and domain belonging.
+
+#### Operation Context
+
+Operation Context defines where the Being is acting.
+
+A Being may live in one domain and operate in another.
+
+Operating in a domain does not automatically grant authority to declare within it.
+
+### 8.5 Language and Meaning
+
+The Unified Language Model preserves meaning across domains.
+
+Without language, messages may move, endpoints may respond, and workflows may execute, but operational coherence may still collapse.
+
+The goal is not only to exchange information.
+
+The goal is to preserve operational meaning so that responsibility, authority, judgment, and continuity remain addressable.
+
+---
 
 ## 9. Metastructure
 
-A Being alone may exist, but it does not operate in isolation. Operation requires interaction. The minimal operational unit of LDOA is:
+A Being may exist conceptually, but it does not operate in isolation.
+
+The minimal operational unit of LDOA is:
 
 ```text
 Situation + Being + Unified Language
 ```
 
-The Situation is operational reality expressed in language and context. The Being provides identity, promises, behavior, native faculties, cognition, learned capabilities, Judgments, and authority. The Unified Language makes coordination possible across Beings and domains.
+A Situation expresses operational reality in language and context.
 
-From this minimal unit, the architecture scales into multiple Beings, multiple domains, multiple operational layers, and multiple forms of responsibility. LDOA is not simply a collection of autonomous components; it is a metastructure where Beings coordinate through Situations, Judgments, Speech Acts, Cognition, and shared meaning.
+A Being provides Cognition as structural anchor, Identity as operational expression, promises, behavior, faculties, learned capabilities, Judgments, and authority.
 
-Some responsibilities are fulfilled by specialized Beings. Registration, for example, is not a native Faculty of every Being. A Being may produce a Situation that requires registration, but the responsibility of recording belongs to a Being whose promise is to register.
+The Unified Language makes coordination possible across Beings and domains.
+
+LDOA scales into multiple Beings, domains, layers, responsibilities, channels, and contexts.
+
+This larger coordination space is the metastructure.
+
+The metastructure defines how Beings coordinate through:
+
+```text
+Situations
+Acts of Being
+Speech Acts
+Judgments
+Breakdowns
+Promises
+Authority
+Cognition
+Identity
+Context
+Shared Meaning
+```
+
+### 9.1 Specialized Beings
+
+Some responsibilities are fulfilled by specialized Beings.
+
+Registration, for example, is not a native Faculty of every Being.
+
+A Being may produce a Situation that requires registration, but the responsibility of recording belongs to a Being whose promise is to register.
+
+Likewise, accounting, inventory, support, recovery, audit, or communication may each be fulfilled by specialized Beings.
+
+Each Being attends Situations according to its own domain, promises, capabilities, authority, and judgment criteria.
+
+### 9.2 Domain Propagation
+
+A Declaration or Affirmation produced in one domain may become a Situation for another domain.
+
+For example:
+
+```text
+Sales declares a sale.
+Inventory attends the sale as a Situation.
+Accounting attends the sale as a Situation.
+Registration attends the sale as a Situation.
+```
+
+Each domain does not merely receive data.
+
+Each domain listens according to its own responsibility.
+
+Inventory may update stock, expose insufficiency, or declare a Breakdown.
+
+Accounting may create an entry, defer reconciliation, or expose a Breakdown.
+
+Registration may persist a trace, fail to persist, or expose a Breakdown.
+
+The sale does not disappear because one domain cannot continue.
+
+The failure of one domain becomes a new Situation.
+
+### 9.3 Operational Continuity
+
+Operational Continuity means that the system preserves, transforms, restores, or makes addressable the reality it recognizes.
+
+Continuity does not mean that everything succeeds immediately.
+
+Continuity means that reality remains addressable.
+
+A system preserves continuity when it can say:
+
+```text
+This occurred.
+This was attended.
+This was judged.
+This was declared or affirmed.
+This failed here.
+This became a Breakdown.
+This was delegated.
+This remains pending.
+This requires another Being.
+This requires human intervention.
+```
+
+Continuity is preserved when the system does not erase reality merely because it cannot complete technical processing.
+
+---
 
 ## 10. Synthesis
 
-The Language-Driven Ontological Architecture defines a way of designing systems around the structure of action and language.
+LDOA proposes an architectural shift.
 
-The design does not begin with databases, services, APIs, or infrastructure. It begins with operational reality expressed as Situations and with Beings carrying responsibility through declarative definitions.
+It moves from software-centered design to operational-reality-centered design.
 
-A Situation is operational reality in language and context. Beings listen, distinguish, judge, and produce acts. Cognition preserves memory and learned capabilities. A common channel allows Beings to coordinate. Breakdowns make friction addressable. Declarations, backed by Authority, transform or constitute the operational world.
+It treats language as operational, not decorative.
 
-Infrastructure executes the operations.
-Language provides shared meaning.
-The channel allows coordination.
-Judgments evaluate Situations.
-Cognition preserves and refines operational ability.
-Valid acts move reality forward.
+It treats declarations as reality-producing when authority exists.
 
-## 11. Author, Copyright & License
+It treats affirmations as observations of operational reality.
 
-**Author:** Andres Silva Hormazabal.
+It treats breakdowns as addressable Situations, not merely failures.
 
-**Year:** 2026
+It treats Beings as ontological-operational units with Cognition, Identity, promises, behavior, faculties, capabilities, judgments, and authority.
 
-**Affiliation:** Sin Límites SpA
+It treats Cognition as the immutable structural anchor of the Being, and Identity as its mutable operational expression.
 
-**Copyright & Licensing**
+It treats infrastructure as execution and transport, not as sovereign reality.
 
-This document, *Language-Driven Ontological Architecture (LDOA) — Manifest v1*, is the original intellectual property of Andres Nicolas Silva Hormazabal.
+It treats the database as a record, not as the ruler of what occurred.
 
-It is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+It treats the message bus as a channel, not as meaning.
 
-To view a copy of this license, visit: https://creativecommons.org/licenses/by/4.0/
+It treats validation as technical or domain evaluation, not automatically as authority to deny reality.
 
-**Permissions & Attribution**
+It treats transport mechanisms as implementation choices, not as definitions of the pattern.
 
-Under this license, you are free to:
+REST, event buses, queues, webhooks, files, or scheduled triggers may all implement the Common Communication Channel.
 
-* **Share:** Copy and redistribute the material in any medium or format.
-* **Adapt:** Remix, transform, and build upon the material for any purpose, even commercially.
+But LDOA does not live in the transport layer.
 
-**Under the following terms:**
+It lives in the layer of operational reality, language, responsibility, authority, and continuity that any transport may carry.
 
-* **Attribution:** You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+The core movement remains:
 
-**Recommended Citation Format:**
+```text
+Situation → Being(s) → Speech Act(s) → Operational Continuity
+```
 
-> Silva Hormazabal, A. (2026). *Language-Driven Ontological Architecture (LDOA) — Manifest v1*. Sin Límites SpA. Licensed under CC BY 4.0.
+And the operational loop may be understood as:
 
+```text
+Speech Act → Situation → Being → Act of Being → Speech Act → New Situation
+```
+
+The Unified Language Model makes that loop possible.
+
+It allows Beings to coordinate through shared distinctions rather than merely exchanging data.
+
+In its simplest form, LDOA says:
+
+```text
+Operational reality should not be punished because it does not fit the system.
+```
+
+Instead:
+
+```text
+Reality must be expressed.
+Beings must attend.
+Judgments must be made.
+Authority must be respected.
+Acts must be produced.
+Breakdowns must become addressable.
+Continuity must be preserved.
+```
+
+---
+
+## 11. Author, Copyright, and License
+
+**Language-Driven Ontological Architecture (LDOA) — Manifest v4** is the original intellectual property of:
+
+```text
+Andres Silva Hormazabal
+Sin Límites SpA
+2026
+```
+
+Licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+
+You are free to share and adapt this material for any purpose, as long as appropriate credit is given.
+
+Suggested attribution:
+
+```text
+Language-Driven Ontological Architecture (LDOA), Andres Silva Hormazabal, Sin Límites SpA, 2026.
+```
