@@ -10,9 +10,9 @@ LDOA starts from a simple observation:
 
 People usually do not want to learn how software thinks in order to do their work.
 
-A seller wants to sell.
-A warehouse operator wants to receive goods.
-A nurse wants to attend a patient.
+A seller wants to sell.  
+A warehouse operator wants to receive goods.  
+A nurse wants to attend a patient.  
 A business owner wants the business to keep moving.
 
 They should not have to become inventory clerks, database operators, workflow experts, or integration specialists just to make their work acceptable to software.
@@ -25,9 +25,9 @@ LDOA defines a way to model systems as ecosystems of **Situations**, **Beings**,
 
 Its intent is to prevent software infrastructure from becoming the authority over reality.
 
-A database may fail to record.
-A message bus may fail to transport.
-A component may fail to recognize.
+A database may fail to record.  
+A message bus may fail to transport.  
+A component may fail to recognize.  
 A capability may be unavailable.
 
 None of those failures, by themselves, decide that the operational reality did not occur.
@@ -44,7 +44,7 @@ In those systems, the software becomes the center of the operation.
 
 LDOA takes the opposite position:
 
-> The system should support operational reality.
+> The system should support operational reality.  
 > Operational reality should not be reduced to what the system was able to record.
 
 ## The Problem
@@ -53,9 +53,9 @@ Traditional software solutions treat business acts — a sale, a registration, a
 
 This is technically convenient, but architecturally it confuses operational reality with its technical definitions, schemas, errors, and traces.
 
-A definition is not the act.
-A schema is not the reality.
-An error is not the truth.
+A definition is not the act.  
+A schema is not the reality.  
+An error is not the truth.  
 A trace is not the responsibility.
 
 When the system cannot record, transport, synchronize, or process the act, the technical failure is often treated as if the operational act itself had not occurred.
@@ -76,12 +76,12 @@ It should not deny reality.
 
 LDOA is useful when these forces appear together:
 
-* users need to continue working even when infrastructure is imperfect;
-* operational acts cross several domains;
-* each domain has its own responsibility and authority;
-* failures should become visible and addressable;
-* technical consistency is important, but should not be confused with operational truth;
-* the system must preserve meaning, not only move data.
+- users need to continue working even when infrastructure is imperfect;
+- operational acts cross several domains;
+- each domain has its own responsibility and authority;
+- failures should become visible and addressable;
+- technical consistency is important, but should not be confused with operational truth;
+- the system must preserve meaning, not only move data.
 
 The pattern exists because these forces are usually mixed together inside services, workflows, databases, queues, validations, and user interfaces.
 
@@ -117,10 +117,10 @@ If the seller has authority in the sales domain, that declaration constitutes op
 
 From there, other Beings may listen:
 
-* the Sales Being continues the sale;
-* the Inventory Being updates or evaluates stock;
-* the Accounting Being performs the accounting work;
-* the Registration Being records the trace.
+- the Sales Being continues the sale;
+- the Inventory Being updates or evaluates stock;
+- the Accounting Being performs the accounting work;
+- the Registration Being records the trace.
 
 Each Being operates in its own domain, with its own promises and authority.
 
@@ -136,15 +136,15 @@ Those failures become new Situations that must be judged, handled, delegated, re
 
 LDOA is composed of several internal models:
 
-* **Behavior Model** — defines how a Being fulfills its promises when a Situation appears.
-* **Faculty, Capability, and Cognition Model** — separates native modes of operation from acquired abilities and internal memory.
-* **Judgment and Breakdown Model** — makes evaluation and operational friction explicit.
-* **Speech Act Model** — defines how produced acts affirm, declare, or expose Breakdowns.
-* **Authority Model** — defines when a produced act has transformative force.
-* **Common Communication Channel Model** — defines the shared medium through which acts circulate.
-* **Unified Language Model** — preserves shared meaning across domains.
-* **Multi-Domain Context Model** — separates residence, operation, and situation contexts.
-* **Metastructure Model** — describes how multiple Beings coordinate through Situations and Speech Acts.
+- **Behavior Model** — defines how a Being fulfills its promises when a Situation appears.
+- **Faculty, Capability, and Cognition Model** — separates native modes of operation from acquired abilities and internal memory.
+- **Judgment and Breakdown Model** — makes evaluation and operational friction explicit.
+- **Speech Act Model** — defines how produced acts affirm, declare, or expose Breakdowns.
+- **Authority Model** — defines when a produced act has transformative force.
+- **Common Communication Channel Model** — defines the shared medium through which acts circulate.
+- **Unified Language Model** — preserves shared meaning across domains.
+- **Multi-Domain Context Model** — separates residence, operation, and situation contexts.
+- **Metastructure Model** — describes how multiple Beings coordinate through Situations and Speech Acts.
 
 These models are not separate architectures. They are dimensions of the same pattern.
 
@@ -152,20 +152,20 @@ These models are not separate architectures. They are dimensions of the same pat
 
 LDOA uses a specific vocabulary:
 
-* **Situation** — operational reality expressed in language and context.
-* **Being** — the core ontological-operational unit of the architecture.
-* **Promise** — what a Being is committed to fulfill.
-* **Faculty** — a native constitutive mode of operation shared by all Beings.
-* **Capability** — an acquired, learned, granted, or declared operational ability.
-* **Cognition** — the internal domain where a Being preserves memory, distinctions, judgment criteria, and learned capabilities.
-* **Judgment** — the evaluation a Being makes before producing an act.
-* **Speech Act** — an act produced into the shared operational language.
-* **Affirmation** — observes, reports, or confirms operational reality.
-* **Declaration** — transforms or constitutes operational reality when authority exists.
-* **Breakdown** — exposes operational friction as a new Situation.
-* **Authority** — the condition that gives a produced act transformative force within a domain.
-* **Common Communication Channel** — the shared medium where produced acts circulate.
-* **Operational Continuity** — the preservation, transformation, restoration, or handling of operational reality.
+- **Situation** — operational reality expressed in language and context.
+- **Being** — the core ontological-operational unit of the architecture.
+- **Promise** — what a Being is committed to fulfill.
+- **Faculty** — a native constitutive mode of operation shared by all Beings.
+- **Capability** — an acquired, learned, granted, or declared operational ability.
+- **Cognition** — the internal domain where a Being preserves memory, distinctions, judgment criteria, and learned capabilities.
+- **Judgment** — the evaluation a Being makes before producing an act.
+- **Speech Act** — an act produced into the shared operational language.
+- **Affirmation** — observes, reports, or confirms operational reality.
+- **Declaration** — transforms or constitutes operational reality when authority exists.
+- **Breakdown** — exposes operational friction as a new Situation.
+- **Authority** — the condition that gives a produced act transformative force within a domain.
+- **Common Communication Channel** — the shared medium where produced acts circulate.
+- **Operational Continuity** — the preservation, transformation, restoration, or handling of operational reality.
 
 ## Core Ontology and Environments
 
@@ -191,13 +191,13 @@ Use LDOA when the system must preserve operational meaning across domains, respo
 
 It is especially useful when:
 
-* business acts must remain visible even if infrastructure fails;
-* several domains react to the same operational reality;
-* authority matters;
-* promises and responsibilities must be explicit;
-* failures must become addressable instead of disappearing into logs;
-* continuity matters more than simple request-response processing;
-* the system must coordinate people, software, and operational domains.
+- business acts must remain visible even if infrastructure fails;
+- several domains react to the same operational reality;
+- authority matters;
+- promises and responsibilities must be explicit;
+- failures must become addressable instead of disappearing into logs;
+- continuity matters more than simple request-response processing;
+- the system must coordinate people, software, and operational domains.
 
 ## When Not to Use LDOA
 
@@ -215,11 +215,11 @@ LDOA makes responsibility explicit.
 
 That is useful, but it has a cost.
 
-Domains must be named.
-Promises must be declared.
-Authority must be modeled.
-Breakdowns must be handled.
-Speech Acts must be distinguished.
+Domains must be named.  
+Promises must be declared.  
+Authority must be modeled.  
+Breakdowns must be handled.  
+Speech Acts must be distinguished.  
 Operational continuity must be designed deliberately.
 
 The pattern does not remove complexity. It moves complexity into explicit architectural distinctions.
@@ -244,44 +244,63 @@ LDOA defines the rules of operational coordination: how reality is expressed, li
 
 This repository contains the current public formulation of LDOA.
 
+Current structure:
+
 ```text
 LDOA/
 ├── README.md
 ├── manifest.md
-├── LICENSE
-│
-├── core-ontology/
-│   ├── domains/
-│   │   ├── sales/              # Sales domain
-│   │   └── accounting/         # Accounting domain
-│   │
-│   ├── unified-language/
-│   │   ├── situations/         # Situation models
-│   │   └── speech-acts/        # Affirmation, Declaration, Breakdown
-│   │
-│   └── metastructure/          # Coordination rules across domains
-│
-└── environments/
-    ├── event-driven/
-    │   ├── faculty-impl/       # Listening/Speaking through events
-    │   └── coordination.md     # Coordination rules for event-driven environments
-    │
-    └── api-driven/
-        ├── faculty-impl/       # Listening/Speaking through endpoints and calls
-        └── coordination.md     # Coordination rules for API-driven environments
+└── LICENSE
 ```
 
-The `core-ontology/` directory contains the stable architectural distinctions: domains, Situations, Speech Acts, and metastructure rules.
+The current release focuses on the architectural manifest and the core conceptual structure of LDOA.
 
-The `environments/` directory describes how those distinctions may be expressed through different technical media, such as event-driven or API-driven systems.
+Planned structure:
 
-Future documents may include:
+```text
+LDOA/
+├── core-ontology/
+│   ├── domains/
+│   │   ├── sales/
+│   │   └── accounting/
+│   │
+│   ├── unified-language/
+│   │   ├── situations/
+│   │   └── speech-acts/
+│   │
+│   └── metastructure/
+│
+├── environments/
+│   ├── event-driven/
+│   │   ├── faculty-impl/
+│   │   └── coordination.md
+│   │
+│   └── api-driven/
+│       ├── faculty-impl/
+│       └── coordination.md
+│
+├── examples/
+├── diagrams/
+├── concepts.md
+├── architecture.md
+└── evolution.md
+```
 
-* `concepts.md` — glossary and conceptual definitions.
-* `architecture.md` — extended architectural explanation.
-* `examples/` — practical examples.
-* `diagrams/` — visual representations.
-* `evolution.md` — conceptual evolution of the pattern.
+The `core-ontology/` directory will contain the stable architectural distinctions: domains, Situations, Speech Acts, and metastructure rules.
+
+The `environments/` directory will describe how those distinctions may be expressed through different technical media, such as event-driven or API-driven systems.
+
+## Planned Work
+
+The initial public release focuses on the architectural manifest and the core conceptual structure of LDOA.
+
+The following artifacts are currently being prepared:
+
+- [ ] `core-ontology/` — Formalization of domain models, Situation models, and Speech Act schemas.
+- [ ] `environments/event-driven/` — Design patterns for asynchronous implementations.
+- [ ] `examples/` — Walkthrough of the Sales-to-Accounting operational flow.
+
+Contributions and discussions on these topics are welcome.
 
 ## Current Status
 
@@ -296,4 +315,3 @@ Language-Driven Ontological Architecture (LDOA) — Manifest v1 is the original 
 Licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
 
 You are free to share and adapt this material for any purpose, as long as appropriate credit is given. See the [LICENSE](./LICENSE) file for more details.
-
