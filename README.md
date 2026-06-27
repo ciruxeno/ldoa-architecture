@@ -4,7 +4,7 @@
  
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-Language-Driven Ontological Architecture is an architectural pattern for designing software around operational reality, responsibility, language, authority, and continuity.
+An architectural pattern in which situations from reality are attended by Beings operating within the ontological domain of language, maintaining operational continuity.
 
 LDOA starts from a simple observation:
 
