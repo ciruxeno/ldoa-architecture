@@ -1,5 +1,7 @@
 # Language-Driven Ontological Architecture (LDOA) — Manifest v4
 
+>An architectural pattern in which situations from reality are attended by Beings operating within the ontological domain of language, maintaining operational continuity.
+
 ## Epistemological Disclaimer
 
 Language-Driven Ontological Architecture uses terms such as **Being**, **Situation**, **Judgment**, **Affirmation**, **Declaration**, **Breakdown**, **Listening**, **Speaking**, **Promise**, **Authority**, and **Operational Reality** as architectural translations of ontological distinctions.
