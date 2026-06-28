@@ -106,7 +106,7 @@ A **Situation** is operational reality expressed in language and context.
 
 A **Being** listens to Situations according to its promises, domain, authority, context, cognition, and behavior.
 
-An **Ontological Speech Act** is what a Being produces into the shared operational language of the system. It may affirm reality, declare a new reality, or expose a Breakdown.
+An **Speech Act** is what a Being produces into the shared operational language of the system. It may affirm reality, declare a new reality, or expose a Breakdown.
 
 A produced Speech Act may itself become a new Situation for other Beings.
 
