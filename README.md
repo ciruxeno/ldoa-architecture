@@ -121,7 +121,7 @@ This does not mean that structure disappears.
 
 It means the burden of structuring operational reality should belong to the architecture, not to the person doing the work.
 
-For a deeper treatment of these examples, see [`concepts/operational-frictions.md`](./concepts/operational-frictions.md).
+For a deeper treatment of these examples, see [`concepts/operational_frictions.md`](./concepts/operational_frictions.md).
 
 ---
 
