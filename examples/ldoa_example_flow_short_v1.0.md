@@ -12,7 +12,9 @@ The example uses a small business situation:
 
 The purpose of this document is to show the basic flow of LDOA, not to describe the internal implementation of a specific runtime.
 
-BODY may be understood as one possible runtime implementation of this pattern, but the focus here is LDOA itself.
+BODI is the proprietary runtime product of Sin Límites SpA that implements LDOA.
+
+This document focuses on LDOA as an architectural pattern, not on BODI as a product or implementation.
 
 This example follows the core definition of LDOA:
 
