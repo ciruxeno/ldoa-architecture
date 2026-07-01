@@ -387,10 +387,6 @@ The ontology remains the same.
 
 ## 15. Implementation Note
 
-BODY may implement this pattern using internal Beings, domains, layers, channels, and technical capabilities.
-
-Those internal design decisions are outside the scope of the public example flow.
-
 The reader should focus on the architectural behavior:
 
 ```text
