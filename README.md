@@ -214,7 +214,7 @@ ldoa-architecture/
 ├── LICENSE
 ├── concepts/
 │   ├── ldoa_language.md
-│   └── operational-frictions.md
+│   └── operational_frictions.md
 └── examples/
     ├── ldoa_example_flow_short_v1.0.md
     └── ldoa_example_flow_extended_v1.0.md
@@ -224,7 +224,7 @@ The repository is organized as follows:
 
 * [`MANIFEST.md`](./MANIFEST.md) — the core specification and philosophical foundation of LDOA.
 * [`concepts/ldoa_language.md`](./concepts/ldoa_language.md) — operational language concepts, including Beings, Promises, Authority, and Speech Acts.
-* [`concepts/operational-frictions.md`](./concepts/operational-frictions.md) — real operational frictions that motivate the pattern.
+* [`concepts/operational_frictions.md`](./concepts/operational_frictions.md) — real operational frictions that motivate the pattern.
 * [`examples/ldoa_example_flow_short_v1.0.md`](./examples/ldoa_example_flow_short_v1.0.md) — a short walkthrough from human declaration to operational continuity.
 * [`examples/ldoa_example_flow_extended_v1.0.md`](./examples/ldoa_example_flow_extended_v1.0.md) — an extended flow with more detail and visual structure.
 
