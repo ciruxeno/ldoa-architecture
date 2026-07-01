@@ -16,7 +16,9 @@ This extended example shows where each LDOA rule applies inside that flow.
 
 The purpose is not to expose the internal design of a specific runtime.
 
-BODY may be understood as one possible runtime implementation of this pattern, but the focus here is LDOA itself.
+BODI is the proprietary runtime product of Sin Límites SpA that implements LDOA.
+
+This document focuses on LDOA as an architectural pattern, not on BODI as a product or implementation.
 
 This example follows the core definition of LDOA:
 
